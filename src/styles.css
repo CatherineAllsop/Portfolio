@@ -1,47 +1,73 @@
-body {
-   background-color: rgb(255, 240, 218);
+:root {
+   --heading-font: 'Fira Sans', sans-serif;
+   --base-font: 'Source Sans Pro', sans-serif
+   --primary-color: #5f9ea0;
 }
-@media (min-width: 768px) {
+body {
+   background-color: rgb(248, 238, 224);
+}
+@media (max-width: 992px) {
    .navbar .navbar-collapse {
        text-align: center;
    }
 }
 h1 {
-   color: teal;
-   font-size: 70px;
-   font-weight: 800;
-   margin-top: 60px;
+   color: #5f9ea0;
+   font-family: var(--heading-font);
+   font-size: 80px;
+   font-weight: 700;
+   margin-top: 30px;
    text-align: center;
 }
 h2 {
+   font-family: var(--heading-font);
    font-weight: 400;
-   margin-top: 25px;
+   margin-top: 12px;
    text-align: center;
 }
 h3 {
-   font-size: 20px;
+   font-family: var(--heading-font);
+   font-size: 22px;
    font-weight: 300;
+   margin-top: 6px;
+   margin-bottom: 2px;
+   text-align: center;
 }
 h4 {
+   font-family: var(--heading-font);
    color:darkslategrey;
    font-size: 18px;
-   font-weight: 600;
+   font-weight: 400;
+}
+p {
+   font-family: var(--base-font);
+   font-size: 15px;
+   margin-bottom: 25px;
+   text-align: center;
+}
+img {
+   border: 3px outset cadetblue;
+   border-radius: 4px;
+   display: block;
+   margin: 0 auto;
 }
 footer {
-   background-color: cadetblue;
+   background-color: #5f9ea0;
    margin-top: 30px;
+   margin-bottom: 0;
    padding: 20px;
    text-align: center;
 }
 .contact-button {
-   background-color: rgb(240, 145, 145);
-   border: 3px solid indianred;
+   background-color: rgb(238, 192, 192);
+   border: 3px solid rgb(207, 108, 108);
    border-radius: 3px;
    display: block;
    font-size: 14px;
    font-weight: 600;
    margin:0 auto;
-   margin-top: 40px;
+   margin-top: 35px;
+   margin-bottom: 35px;
    padding: 5px 12px;
    text-transform: uppercase;
    transition: all 200ms linear;
@@ -57,6 +83,8 @@ footer {
    opacity: 0.9;
    text-decoration: underline;
 }
-.portfolio-gallery {
-   margin-top: 30px;
+.social-media-links {
+   color: rgb(161, 72, 72);
+   font-size: 20px;
+   text-decoration: none;
 }
