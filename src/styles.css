@@ -1,10 +1,45 @@
 body {
-   background-color: blanchedalmond;
-   padding: 20px;
+   background-color: rgb(255, 240, 218);
+}
+@media (min-width: 768px) {
+   .navbar .navbar-collapse {
+       text-align: center;
+   }
 }
 h1 {
+   color: teal;
+   font-size: 70px;
+   font-weight: 800;
+   margin-top: 60px;
    text-align: center;
 }
 h2 {
+   font-weight: 400;
+   margin-top: 25px;
    text-align: center;
+}
+.contact-button {
+   background-color: rgb(240, 145, 145);
+   border: 3px solid indianred;
+   border-radius: 3px;
+   box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+   display: block;
+   font-size: 14px;
+   font-weight: 600;
+   margin:0 auto;
+   margin-top: 40px;
+   padding: 5px 12px;
+   text-transform: uppercase;
+   transition: all 200ms linear;
+}
+.contact-button a {
+   color: rgb(161, 72, 72);
+   text-decoration: none;
+}
+.contact-button:hover {
+   background: rgb(118, 204, 204);
+   border-color: teal ;
+   cursor: pointer;
+   opacity: 0.9;
+   text-decoration: underline;
 }
