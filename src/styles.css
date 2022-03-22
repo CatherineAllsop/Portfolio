@@ -101,8 +101,12 @@ footer {
 }
 .social-media-links {
    color: var(--text-accent-color);
+   cursor: pointer;
    font-size: 20px;
    text-decoration: none;
+}
+.social-media-links:hover {
+   color: var(--tertiary-color);
 }
 .about-content {
    font-size: 20px;
@@ -135,6 +139,17 @@ footer {
    margin-top: 0;
    margin-left: 25px;
 }
+.portfolio {
+   text-align: left;
+}
+.coding-info {
+   font-size: 15px;
+   font-style: italic;
+   line-height: 1;
+   text-align: center;
+   padding: 10px 10px 0px 0px;
+   margin-bottom: 3px;
+}
 @media (max-width: 992px) {
    .navbar .navbar-collapse {
        text-align: center;
@@ -152,7 +167,7 @@ footer {
       margin-left: 0;
    }
    p {
-      margin-bottom: 4px;
+      margin-bottom: 12px;
    }
    .skip-button {
       margin-bottom: 25px;
