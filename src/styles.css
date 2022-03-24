@@ -112,7 +112,7 @@ footer {
    color: var(--tertiary-color);
 }
 .about-content {
-   font-size: 20px;
+   font-size: 19px;
    text-align: left;
 }
 .blog-button, .skip-button {
@@ -153,6 +153,12 @@ footer {
    padding: 10px 10px 0px 0px;
    margin-bottom: 3px;
 }
+.testimonials {
+   background-color: var(--background-accent-color);
+   margin: 50px 250px 0px 250px;
+   padding: 10px 30px;
+   text-align: center;
+}
 @media (max-width: 992px) {
    .navbar .navbar-collapse {
        text-align: center;
@@ -177,5 +183,8 @@ footer {
    }
    .portfolio-images {
       width: 300px;
+   }
+   .testimonials {
+      margin: 35px 0px 0px 0px;
    }
 }
