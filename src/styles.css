@@ -71,7 +71,7 @@ img {
 }
 footer {
    background-color: var(--secondary-color);
-   margin-top: 30px;
+   margin-top: 15px;
    margin-bottom: 0;
    padding: 20px 20px 10px 20px;
    text-align: center;
@@ -150,8 +150,7 @@ footer {
    font-style: italic;
    line-height: 1;
    text-align: center;
-   padding: 10px 10px 0px 0px;
-   margin-bottom: 3px;
+   margin: 3px 0px;
 }
 .testimonials {
    background-color: var(--background-accent-color);
@@ -159,7 +158,34 @@ footer {
    padding: 10px 30px;
    text-align: center;
 }
+.row-spacer {
+   margin-top: 40px;
+}
+.row-spacer-2 {
+   margin-top: 20px;
+}
+.reverse-content-wrapper {
+   display: contents;
+}
+.reverse-1, .reverse-2 {
+   padding: 0px 12px;
+}
+@media (max-width: 650px) {
+   h1 {
+      font-size: 50px;
+   }
+   h2 {
+      font-size: 21px;
+   }
+}
 @media (max-width: 992px) {
+   h4, .visit-blog {
+      text-align: center;
+      margin-left: 0;
+   }
+   p {
+      margin-bottom: 12px;
+   }
    .navbar .navbar-collapse {
        text-align: center;
    }
@@ -171,13 +197,6 @@ footer {
       display: block;
       margin: 0 auto;
    }
-   h4, .visit-blog {
-      text-align: center;
-      margin-left: 0;
-   }
-   p {
-      margin-bottom: 12px;
-   }
    .skip-button {
       margin-bottom: 25px;
    }
@@ -186,5 +205,21 @@ footer {
    }
    .testimonials {
       margin: 35px 0px 0px 0px;
+   }
+   .blog-logo {
+      margin-bottom: 8px;
+   }
+   .row-spacer, .row-spacer-2{
+      margin-top: 0px;
+   }
+   .reverse-content-wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+   .reverse-1 {
+      order:2;
+   }
+   .reverse-2 {
+      order:1;
    }
 }
