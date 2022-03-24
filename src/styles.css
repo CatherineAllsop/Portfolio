@@ -99,13 +99,16 @@ footer {
    opacity: 0.9;
    text-decoration: underline;
 }
-.social-media-links {
+.social-media-links, .portfolio-link {
    color: var(--text-accent-color);
    cursor: pointer;
    font-size: 20px;
    text-decoration: none;
 }
-.social-media-links:hover {
+.portfolio-link {
+   text-decoration: underline;
+}
+.social-media-links:hover, .portfolio-link:hover {
    color: var(--tertiary-color);
 }
 .about-content {
@@ -142,7 +145,7 @@ footer {
 .portfolio {
    text-align: left;
 }
-.coding-info {
+.code-info {
    font-size: 15px;
    font-style: italic;
    line-height: 1;
@@ -171,5 +174,8 @@ footer {
    }
    .skip-button {
       margin-bottom: 25px;
+   }
+   .portfolio-images {
+      width: 300px;
    }
 }
